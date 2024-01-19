@@ -1,9 +1,9 @@
-This is an implementation of an AI-assited N-body collision avoidance method. The file main.py contains the the implementation of a deep neural network trained on a partcular DATA shown in the file DATA.xlsx
+This is a novel approach that we developed as a scientific project. We created a GPS-based approach primarily focused on collecting robot locations using local GPS to predict their paths, ensuring collision-free navigation.
 
-This DATA is generated using a DATA generaton process using OCRA algorthm. This process is explained is folder DATA_Collection.
+It involves the implementation of an AI-assisted N-body collision avoidance method. The main.py file contains the implementation of a deep neural network trained on specific data, as shown in the DATA.xlsx file.
 
-The DATA used is the following shape : 10000rows X 40 columns. The first 20 column show the positions of 10 robots in step i, and the last 20 columns show the position of 10 robots in the step i+1.
+The data is generated through an OCRA algorithm-based data generation process, explained in the DATA_Collection folder. The dataset used has a shape of 10,000 rows and 40 columns. The first 20 columns display the positions of 10 robots at step i, while the last 20 columns show the positions of the same 10 robots at step i+1.
 
-The pyton code can be used for any particular DATASET by changing the configurations of input and oupput layers in main.py file. The model is loaded in model_loading.py file to use it to predict next robots posions.
+The Python code is adaptable to any particular dataset by adjusting the configurations of input and output layers in the main.py file. The model is loaded in the model_loading.py file for predicting the next positions of robots.
 
-To control the model parameters you can use TensorBoad by writing tensorboard --logdir=logs in the terminal. A local interface is shown as return.
+To control the model parameters, TensorBoard can be used by executing "tensorboard --logdir=logs" in the terminal, providing a local interface for monitoring.
