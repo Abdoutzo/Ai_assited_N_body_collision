@@ -15,7 +15,7 @@ from keras.utils import plot_model
 from keras.callbacks import TensorBoard
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
-xlsx_file = 'output0.xlsx'
+xlsx_file = 'DATA.xlsx'
 df = pd.read_excel(xlsx_file)
 
 # Assuming the last 20 columns are the target variables
